@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gm-curiosidades.com</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    .row.content {
+        height: 450px
+    }
+
+    .col-sm-12 h1,
+    h3 {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .col-sm-12 h4 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    /* .sidenav {
+        padding-top: 50px;
+        background-color: #f1f1f1;
+        height: 100%;
+    } */
+
+    /* .col-sm-2 img {
+        margin-left: -46px;
+        position: relative;
+        padding-top: 40px;
+    } */
+
+    /* .well img {
+        width: 100%;
+    } */
+
+
+    footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+        /* .sidenav {
+            height: auto;
+            padding: 15px;
+        } */
+
+        .row.content {
+            height: auto;
+        }
+    }
+</style>
+
+<body>
+    <!-- nav = seção com links de navegação. -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <!-- span = alinhar elementos inline (em linha) -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">GM</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <!-- ul = é usada para definir a lista -->
+                <ul class="nav navbar-nav">
+                    <!-- li =  é usada para cada item da lista. -->
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <div class="row content">
+            <!-- <div class="col-sm-2 sidenav">
+                <a href="#"><img src="img/1.png"></a>
+                <p><a href="#">Link</a></p>
+                <p><a href="#">Link</a></p>
+            </div> -->
+            <div class="col-sm-12 text-center">
+                <h1>Seja bem vindo(a)</h1>
+                <h4>A copa do mundo está chegando, e o Catar é logo ali! Faltando menos de 100 dias para o início do
+                    Mundial, nós iremos recordar os grandes
+                    artilheiros da história das Copas.</h4>
+                <center><img class="img-responsive" src="img/1.jpg" alt="Brasil"></center>
+                <!-- hr = siginifica uma quebra temática entre elementos de nível de parágrafo -->
+                <hr>
+                <h3>Confira a lista dos maiores artilheiros</h3>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nome</th>
+                                <th>País</th>
+                                <th>Gols</th>
+                                <th>Jogos</th>
+                                <th>Anos</th>
+                            </tr>
+                        <tbody>
+                            <tr class="danger">
+                                <td>1.</td>
+                                <td>Miroslav Klose</td>
+                                <td>Alemanha</td>
+                                <td>16</td>
+                                <td>28</td>
+                                <td>2002, 2006, 2010 e 2014</td>
+                            </tr>
+                            <tr class="success">
+                                <td>2.</td>
+                                <td>Ronaldo Fenônemo</td>
+                                <td>Brasil</td>
+                                <td>15</td>
+                                <td>19</td>
+                                <td>1994, 1998, 2002 e 2006</td>
+                            </tr>
+                            <tr class="danger">
+                                <td>3.</td>
+                                <td>Gerd Müller</td>
+                                <td>Alemanha</td>
+                                <td>14</td>
+                                <td>13</td>
+                                <td>1970 e 1974</td>
+                            </tr>
+                            <tr class="info">
+                                <td>4.</td>
+                                <td>Just Fontaine</td>
+                                <td>França</td>
+                                <td>13</td>
+                                <td>6</td>
+                                <td>1958</td>
+                            </tr>
+                            <tr class="success">
+                                <td>5.</td>
+                                <td>Pelé</td>
+                                <td>Brasil</td>
+                                <td>12</td>
+                                <td>14</td>
+                                <td>1958, 1962, 1966 e 1970</td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>Sándor Kocsis </td>
+                                <td>Hungria</td>
+                                <td>11</td>
+                                <td>5</td>
+                                <td>1954</td>
+                            </tr>
+                            <tr class="danger">
+                                <td>7.</td>
+                                <td>Jürgen Klinsmann</td>
+                                <td>Alemanha</td>
+                                <td>11</td>
+                                <td>17</td>
+                                <td>1990, 1994 e 1998</td>
+                            </tr>
+                            <tr class="warning">
+                                <td>8.</td>
+                                <td>Helmut Rahn</td>
+                                <td>Alemanha Ocidental</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>1986 e 1990</td>
+                            </tr>
+                            <tr>
+                                <td>9.</td>
+                                <td>Gary Lineker</td>
+                                <td>Inglaterra</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>1986 e 1990</td>
+                            </tr>
+                            <tr class="info">
+                                <td>10.</td>
+                                <td>Gabriel Batistuta</td>
+                                <td>Argentina</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>1994, 1998 e 2002</td>
+                            </tr>
+                            <tr>
+                                <td>11.</td>
+                                <td>Teófilo Cubillas</td>
+                                <td>Peru</td>
+                                <td>10</td>
+                                <td>13</td>
+                                <td>1970, 1978 e 1982</td>
+                            </tr>
+                            <tr class="danger">
+                                <td>12.</td>
+                                <td>Thomas Müller</td>
+                                <td>Alemanha</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>2010, 2014 e 2018</td>
+                            </tr>
+                            <tr>
+                                <td>13.</td>
+                                <td>Grzegorz Lato</td>
+                                <td>Polônia</td>
+                                <td>10</td>
+                                <td>20</td>
+                                <td>1974, 1978 e 1982</td>
+                            </tr>
+                        </tbody>
+                        </thead>
+                    </table>
+                    <hr>
+                    <div class="col-sm-12 text-center">
+                        <h3>Confira os grupos da Copa do Mundo do Catar 2022!</h3>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Grupo A</th>
+                                        <th>Grupo B</th>
+                                        <th>Grupo C</th>
+                                        <th>Grupo D</th>
+                                        <th>Grupo E</th>
+                                        <th>Grupo F</th>
+                                        <th>Grupo G</th>
+                                        <th>Grupo H</th>
+                                    </tr>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>Catar</td>
+                                        <td>Inglaterra</td>
+                                        <td>Argentina</td>
+                                        <td>França</td>
+                                        <td>Espanha</td>
+                                        <td>Bélgica</td>
+                                        <td>Brasil</td>
+                                        <td>Portugal</td>
+                                    </tr>
+                                    <tr class="danger">
+                                        <td>Equador</td>
+                                        <td>Irã</td>
+                                        <td>Arábia Saudita</td>
+                                        <td>Autralia</td>
+                                        <td>Costa Rica</td>
+                                        <td>Canadá</td>
+                                        <td>Sérvia</td>
+                                        <td>Gana</td>
+                                    </tr>
+                                    <tr class="warning">
+                                        <td>Senegal</td>
+                                        <td>USA</td>
+                                        <td>México</td>
+                                        <td>Dinamarca</td>
+                                        <td>Alemanha</td>
+                                        <td>Marrocos</td>
+                                        <td>Suíça</td>
+                                        <td>Uruguai</td>
+                                    </tr>
+                                    <tr class="info">
+                                        <td>Holanda</td>
+                                        <td>País de Gales</td>
+                                        <td>Polônia</td>
+                                        <td>Tunísia</td>
+                                        <td>Japão</td>
+                                        <td>Croácia</td>
+                                        <td>Camarões</td>
+                                        <td>Coreia do Sul</td>
+                                    </tr>
+                                </tbody>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-sm-2 sidenav">
+                <div class="well">
+                    <a href=""><img src="img/1.jpg" alt=""></a>
+                </div>
+                <div class="well">
+                    <a href=""><img src="img/2.jpg" alt=""></a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>GiovanaManuquian&copy;2022</p>
+    </footer>
+
+</body>
+
+</html>
